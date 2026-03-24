@@ -9,10 +9,23 @@
 
     "ReplicatedStorage": {
       "Shared": {
-        "$path": "src/shared"
+        "$path": "src/shared",
+        "HitboxTemplate": {
+          "$className": "Part",
+          "$properties": {
+            "Anchored": true,
+            "CanCollide": false,
+            "Transparency": 0.75,
+            "Massless": true,
+            "Size": [4, 5, 4]
+          }
+        }
       },
       "Remotes": {
-        "$path": "src/remotes"
+        "$path": "src/remotes",
+        "Attack": {
+          "$className": "RemoteEvent"
+        }
       },
       "Packages": {
         "$path": "src/packages"
@@ -20,9 +33,7 @@
     },
 
     "ServerScriptService": {
-      "Server": {
         "$path": "src/server"
-      }
     },
 
     "StarterGui": {
