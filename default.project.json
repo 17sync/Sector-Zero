@@ -13,7 +13,6 @@
         "HitboxTemplate": {
           "$className": "Part",
           "$properties": {
-            "Anchored": true,
             "CanCollide": false,
             "Transparency": 0.75,
             "Massless": true,
